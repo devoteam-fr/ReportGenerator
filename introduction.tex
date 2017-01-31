@@ -1,0 +1,110 @@
+\newpage
+
+\subsection{Notations}
+Chaque vulnérabilité détectée se présente sous la forme suivante :\\
+
+\newcommand{\bhline}{\arrayrulecolor{bharray}\hline\arrayrulecolor{black}}
+\begin{tabular}{m{4cm}m{3cm}m{8cm}}
+  \bhline
+  \center{\color{pinkpd}\huge{\textbf{Vx}}} & \color{pinkpd}\textbf{Description} & \color{pinkpd}\textbf{Description de la vulnérabilité}\\
+  \bhline
+  \center{\multirow{4}{*}{\includegraphics{image/information.png}}} & \cellcolor{bcarray}Impact & \cellcolor{bcarray}Décrit les conséquences possibles en cas d’exploitation de la vulnérabilité\\
+  \cline{2-3}
+  & Exploitation & Indique le niveau des conditions nécessaires pour l’exploitation de la vulnérabilité, à savoir : Complexe, Moyen, Simple\\
+  \cline{2-3}
+  & \cellcolor{bcarray}DICT & \cellcolor{bcarray}Indique les critères de sécurité impactés (Disponibilité, Intégrité, Confidentialité, Traçabilité).\\
+  \cline{2-3}
+  & Composant & Composant affecté par la vulnérabilité\\
+  \hline
+  
+\end{tabular}\\\\
+
+Chaque vulnérabilité est identifiée par un identifiant Vx. La Criticité de chaque vulnérabilité représente le niveau de gravité de cette dernière, évalué de la manière suivante :\\\\
+
+%% Tableau Des Criticités !
+
+\begin{tabular}{|m{3cm}m{2cm}m{2cm}m{8cm}|}
+  \bhline
+  \rowcolor{bharray}\multicolumn{4}{|c|}{\color{white}\textbf{Criticité}}\\
+  \bhline
+  \center{\includegraphics{image/critique.png}} & \includegraphics[width=35pt, height=60pt]{image/critique.png} & \textbf{Critique} & Désigne une vulnérabilité dont l’exploitation fructueuse peut se traduire par une perte de données confidentielles, une indisponibilité d’un service critique, une fraude etc. : tout ceci ayant un impact extrêmement grave sur la stratégie à moyen ou long terme de la société.\\
+  \bhline
+  \center{\includegraphics{image/majeure.png}} & \includegraphics[width=35pt, height=60pt]{image/majeure.png} & \textbf{Majeure} & Désigne une vulnérabilité dont l’exploitation fructueuse peut se traduire par une perte de données confidentielles, indisponibilité d’un service critique, fraude etc. : tout ceci ayant un impact significatif à court terme sur l’image de marque de la société ou ses divers aspects juridiques et financiers (baisse du cours de la bourse, baisse du chiffre d’affaires, baisse du résultat, etc.).\\
+  \bhline
+  \center{\includegraphics{image/mineure.png}} & \includegraphics[width=35pt, height=60pt]{image/mineure.png} & \textbf{Mineure} & Désigne une vulnérabilité dont l’exploitation fructueuse peut avoir un impact faible et de courte durée sur l’activité de l’entreprise : arrêt temporaire d’un service, atteintes mineures au climat social, désorganisation, etc.\\
+  \bhline
+  \center{\includegraphics{image/information.png}} & \includegraphics[width=35pt, height=60pt]{image/information.png} & \textbf{Information} & Désigne une vulnérabilité dont l’exploitation fructueuse n’a pas d’impact direct sur l’activité de l’entreprise. Souvent, il s’agit d’une vulnérabilité qui conduit à une divulgation d’informations pouvant aider un attaquant à mieux cibler et exécuter ses attaques.\\
+  \bhline
+  
+\end{tabular}
+
+
+\newpage
+
+Chaque \textbf{recommandation} se présente sous la forme suivante :\\\\
+%\rowcolors{2}{blue}{yellow}
+\begin{tabular}{m{4cm}m{3cm}m{8cm}}
+  \bhline
+  \center{\color{pinkpd}\huge{\textbf{Rx}}} & \color{pinkpd}\textbf{Description} & \color{pinkpd}\textbf{Contient les caractéristiques de la recommandation}\\
+  \cline{2-3}
+  \center{\multirow{3}{*}{\includegraphics{image/basse.png}}} & \cellcolor{bcarray}Coût & \cellcolor{bcarray}Lié à la mise en place de la recommandation et défini sur 4 niveaux : Faible, Moyen, Fort, Élevé\\
+  \cline{2-3}
+  & Mise en œuvre & La mise en œuvre de la recommandation est définie sur 3 niveaux : Simple, Moyennement complexe, Complexe\\
+  \cline{2-3}
+  & \cellcolor{bcarray}Composant & \cellcolor{bcarray}Composant affecté par la vulnérabilité\\
+  \center{\textbf{\color{pinkpd}Priorité}} &\cellcolor{bcarray} &\cellcolor{bcarray}\\
+  \hline
+\end{tabular}\\\\
+
+Le détail des caractéristiques de chaque recommandation citées ci-dessus est expliqué dans les tableaux suivants :\newline
+
+%% Tableau des Priorités !
+
+\begin{tabular}{!{\color{bharray}\vline}m{3cm}m{2cm}m{2cm}m{8cm}!{\color{bharray}\vline}}
+  \bhline
+  \rowcolor{bharray}\multicolumn{4}{!{\color{bharray}\vline} c !{\color{bharray}\vline}}{\color{white}\textbf{Priorité}}\\
+  \bhline
+  \center{\includegraphics{image/urgente.png}} & \includegraphics[width=35pt, height=60pt]{image/urgente.png} & \textbf{Urgente} & Ce sont les actions à lancer au cours des prochains jours.\\
+  \bhline
+  \center{\includegraphics{image/forte.png}} & \includegraphics[width=35pt, height=60pt]{image/forte.png} & \textbf{Forte} & Ce sont les actions à lancer sous 2 mois.\\
+  \bhline
+  \center{\includegraphics{image/moyenne.png}} & \includegraphics[width=35pt, height=60pt]{image/moyenne.png} & \textbf{Moyenne} & Ce sont les actions à lancer sous 4 mois.\\
+  \bhline
+  \center{\includegraphics{image/basse.png}} & \includegraphics[width=35pt, height=60pt]{image/basse.png} & \textbf{Basse} & Ce sont les actions à initialiser au cours de la prochaine année.\\
+  \bhline
+\end{tabular}
+
+
+\newpage
+
+%% Tableau des Coûts !
+
+\begin{tabular}{!{\color{bharray}\vline}m{3cm}m{12cm}!{\color{bharray}\vline}}
+  \bhline
+  \rowcolor{bharray}\multicolumn{2}{|c|}{\color{white}\textbf{Coût}}\\
+  \bhline
+  \center{\textbf{\'Elevé}} & Désigne le coût associé à une action dont la mise en place peut entraîner le recrutement de personnel supplémentaire, l’implication à long terme des prestataires de services, l’étude et l’implémentation d’une solution technique complexe, etc. En règle générale, il s’agit de dépenses significatives nécessitant l’approbation du comité de direction, ayant un impact important sur le budget annuel de l’entreprise et pouvant évoluer au fur et à mesure de l’avancement du plan d’action. De même, la charge de travail associée est difficilement quantifiable en nombre de jours homme.\\
+  \bhline
+  \center{\textbf{Fort}} & Désigne le coût associé à une action dont la mise en place nécessite l’acquisition d’un nouvel équipement ou logiciel, l’implication à court et moyen terme des prestataires de services externes etc. Les dépenses engendrées se répartissent en général sur une période inférieure à 6 mois.\\
+  \bhline
+  \center{\textbf{Moyen}} & Désigne le coût associé à une action dont la mise en place ne nécessite pas forcément le recrutement de personnel additionnel (employés ou prestataires) et dont la charge de travail ne dépasse pas les 20 jours homme.\\
+  \bhline
+  \center{\textbf{Faible}} & Désigne le coût associé à une action dont la mise en place peut être réalisée par un employé existant dans le cadre de son activité quotidienne.\\
+  \bhline
+\end{tabular}\\\\\\
+
+%% Tableau de Compléxité
+
+\begin{tabular}{!{\color{bharray}\vline}m{3cm}m{12cm}!{\color{bharray}\vline}}
+  \bhline
+  \rowcolor{bharray}\multicolumn{2}{|c|}{\color{white}\textbf{Complexité}}\\
+  \bhline
+  \center{\textbf{Complexe}} & Réalisation d’opérations nécessitant le lancement d’un projet indépendant qui sort du cadre des activités quotidiennes, et pouvant s’étaler sur une durée supérieure à 3 mois.\\
+  \bhline
+  \center{\textbf{Moyennement Complexe}} & Réalisation d’opérations nécessitant une validation préalable, susceptibles d’impacter le comportement des environnements applicatifs ou des processus en place.\\
+  \bhline
+  \center{\textbf{Simple}} & Réalisation d’opérations basiques telles que la modification d’un paramètre de configuration ou toute autre opération ne nécessitant pas une étude d’impact préalable.\\
+  \bhline
+\end{tabular}
+
+\newpage

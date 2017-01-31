@@ -1,0 +1,48 @@
+\documentclass[titlepage]{article}
+\usepackage{graphicx}
+\usepackage[table,svgnames,dvipsnames]{xcolor}
+\usepackage{colortbl}
+\usepackage{array}
+\usepackage[utf8]{inputenc}%accent
+\usepackage[T1]{fontenc}%guillemet avec utf8
+\usepackage{multirow}
+%\usepackage[outer=3cm, bottom=2cm, inner=2cm, heightrounded, marginparwidth=2.5cm, marginparsep=0.25cm]{geometry}
+\usepackage[bottom=5cm]{geometry}
+\usepackage[french]{babel}
+\usepackage{longtable}
+\usepackage{fancyhdr}%entête et pied de page personalisés
+\usepackage{lastpage}
+\usepackage[export]{adjustbox}
+
+\pagestyle{fancy}
+\fancyhead[L]{\includegraphics[width=5cm]{./image/logo_devo}}
+%\renewcommand{\footrulewidth}{1pt}
+\fancyfoot[L]{Copyright Devoteam©}
+\fancyfoot[R]{\thepage\ / \pageref{LastPage}}
+\geometry{hmargin=0cm,vmargin=0cm}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\definecolor{PINKPD}{RGB}{248,72,83}%Pink DVT for the title 
+\definecolor{pinkpd}{RGB}{248,72,83}%pink DVT
+\definecolor{bharray}{RGB}{49,91,109}%bleu head array
+\definecolor{bcarray}{RGB}{212,235,231}%blue column array
+\definecolor{ycarray}{RGB}{43,144,216}%yellow column array
+
+\begin{document}
+
+\input{front_page.tex}
+
+\newpage
+
+\tableofcontents
+\newpage
+\color{pinkpd}\section{\textcolor{pinkpd}{Introduction}}\color{black}
+
+\input{intro.tex}
+\input{introduction.tex}
+\input{synthese.tex}
+\input{vulnerabilites.tex}
+\newpage
+
+
+\end{document}
